@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.study.dao.TestDao">
+    <!-- 根据主键查询-->
+    <select id="getList" resultType="com.study.entity.TestEntity">
+      select id,name,key_word as keyWord
+      from demo
+    </select>
+</mapper>
